@@ -1,0 +1,263 @@
+2025-05-24 16:26:48,933 - INFO - Starting Test Case 1: Default Options
+2025-05-24 16:26:48,933 - INFO - Test Case 1: Calling run_extraction with destination: /app/integration_test_outputs/test_output_default, options: {'model': True, 'ui': True, 'dep': True, 'measure_usage': True, 'xlsx': False, 'csv': False}
+2025-05-24 16:26:48,933 - INFO - Starting extraction for: sample_tenant.zip to /app/integration_test_outputs/test_output_default
+2025-05-24 16:26:48,935 - ERROR - Error in run_extraction: a bytes-like object is required, not '_io.BytesIO'
+Traceback (most recent call last):
+  File "/app/src/streamlit_app.py", line 230, in run_extraction
+    f.write(uploaded_zip_file_obj.getbuffer())
+TypeError: a bytes-like object is required, not '_io.BytesIO'
+2025-05-24 16:26:48,935 - INFO - Cleaned up temporary directory: /tmp/tmppmft0dwx
+2025-05-24 16:26:48,935 - INFO - Test Case 1 Result: Success=False, Message='Error during extraction setup: a bytes-like object is required, not '_io.BytesIO'', OutputFiles={}
+2025-05-24 16:27:03,605 - INFO - Starting Test Case 1: Default Options
+2025-05-24 16:27:03,605 - INFO - Test Case 1: Calling run_extraction with destination: /app/integration_test_outputs/test_output_default, options: {'model': True, 'ui': True, 'dep': True, 'measure_usage': True, 'xlsx': False, 'csv': False}
+2025-05-24 16:27:03,605 - INFO - Starting extraction for: sample_tenant.zip to /app/integration_test_outputs/test_output_default
+2025-05-24 16:27:03,607 - INFO - Uploaded ZIP file saved to temporary path: /tmp/tmp9pr1uao3/sample_tenant.zip
+2025-05-24 16:27:03,608 - INFO - Reading json file sample_tenant.json from /tmp/tmp9pr1uao3/sample_tenant.zip
+2025-05-24 16:27:03,608 - INFO - Created database output directory: /app/integration_test_outputs/test_output_default/TestTenant_extracted_db
+2025-05-24 16:27:03,608 - INFO - Created UI elements output directory: /app/integration_test_outputs/test_output_default/TestTenant_UIElements
+2025-05-24 16:27:03,608 - INFO - Data source: /tmp/tmp9pr1uao3/sample_tenant.zip
+2025-05-24 16:27:03,608 - INFO - JSON data for tenant 'TestTenant' loaded.
+2025-05-24 16:27:03,608 - INFO - Output base directory (general files e.g. CSV/XLSX): /app/integration_test_outputs/test_output_default
+2025-05-24 16:27:03,608 - INFO - Output directory for DB: /app/integration_test_outputs/test_output_default/TestTenant_extracted_db
+2025-05-24 16:27:03,608 - INFO - Output directory for UI map files: /app/integration_test_outputs/test_output_default/TestTenant_UIElements
+2025-05-24 16:27:03,609 - INFO - JSON file read. Main Dest Dir: /app/integration_test_outputs/test_output_default, DB Path (sub-dir): /app/integration_test_outputs/test_output_default/TestTenant_extracted_db, UI Files Dest: /app/integration_test_outputs/test_output_default/TestTenant_UIElements
+2025-05-24 16:27:03,609 - INFO - Attempting to create DB at /app/integration_test_outputs/test_output_default/TestTenant_extracted_db/TestTenant.db
+2025-05-24 16:27:03,617 - INFO - Tenant Database connection established at /app/integration_test_outputs/test_output_default/TestTenant_extracted_db/TestTenant.db
+2025-05-24 16:27:03,890 - INFO - All base tables processed in the database.
+2025-05-24 16:27:03,891 - INFO - Extracting Model data...
+2025-05-24 16:27:03,892 - ERROR - Error during data extraction: 'AssociationMeasure'
+Traceback (most recent call last):
+  File "/app/src/streamlit_app.py", line 111, in create_db_and_extract
+    model_extractor.createPlanTablesInDB()
+  File "/app/src/modelextractor.py", line 1164, in createPlanTablesInDB
+    "AssociationAsGraph": x["AssociationMeasure"],
+KeyError: 'AssociationMeasure'
+2025-05-24 16:27:03,894 - INFO - Database connection closed.
+2025-05-24 16:27:03,894 - INFO - Cleaned up temporary directory: /tmp/tmp9pr1uao3
+2025-05-24 16:27:03,894 - INFO - Test Case 1 Result: Success=False, Message='Error during data extraction: 'AssociationMeasure'', OutputFiles={'db': '/app/integration_test_outputs/test_output_default/TestTenant_extracted_db/TestTenant.db'}
+2025-05-24 16:27:36,185 - INFO - Starting Test Case 1: Default Options
+2025-05-24 16:27:36,185 - INFO - Test Case 1: Calling run_extraction with destination: /app/integration_test_outputs/test_output_default, options: {'model': True, 'ui': True, 'dep': True, 'measure_usage': True, 'xlsx': False, 'csv': False}
+2025-05-24 16:27:36,185 - INFO - Starting extraction for: sample_tenant.zip to /app/integration_test_outputs/test_output_default
+2025-05-24 16:27:36,187 - INFO - Uploaded ZIP file saved to temporary path: /tmp/tmprmg15jgs/sample_tenant.zip
+2025-05-24 16:27:36,188 - INFO - Reading json file sample_tenant.json from /tmp/tmprmg15jgs/sample_tenant.zip
+2025-05-24 16:27:36,188 - ERROR - Error reading or parsing JSON data from sample_tenant.json in /tmp/tmprmg15jgs/sample_tenant.zip: Expecting property name enclosed in double quotes: line 37 column 43 (char 1236)
+Traceback (most recent call last):
+  File "/app/src/commondatafuncs.py", line 284, in readJsonFile
+    self.jsonData = json.load(dataFile)
+  File "/usr/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 37 column 43 (char 1236)
+2025-05-24 16:27:36,196 - ERROR - Error in run_extraction: Expecting property name enclosed in double quotes: line 37 column 43 (char 1236)
+Traceback (most recent call last):
+  File "/app/src/streamlit_app.py", line 237, in run_extraction
+    commonObj.readJsonFile(zip_file_path, destination_dir_str, is_streamlit_mode=True)
+  File "/app/src/commondatafuncs.py", line 284, in readJsonFile
+    self.jsonData = json.load(dataFile)
+  File "/usr/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 37 column 43 (char 1236)
+2025-05-24 16:27:36,196 - INFO - Cleaned up temporary directory: /tmp/tmprmg15jgs
+2025-05-24 16:27:36,197 - INFO - Test Case 1 Result: Success=False, Message='Error during extraction setup: Expecting property name enclosed in double quotes: line 37 column 43 (char 1236)', OutputFiles={}
+2025-05-24 16:28:09,653 - INFO - Starting Test Case 1: Default Options
+2025-05-24 16:28:09,653 - INFO - Test Case 1: Calling run_extraction with destination: /app/integration_test_outputs/test_output_default, options: {'model': True, 'ui': True, 'dep': True, 'measure_usage': True, 'xlsx': False, 'csv': False}
+2025-05-24 16:28:09,653 - INFO - Starting extraction for: sample_tenant.zip to /app/integration_test_outputs/test_output_default
+2025-05-24 16:28:09,655 - INFO - Uploaded ZIP file saved to temporary path: /tmp/tmp5ayd4v81/sample_tenant.zip
+2025-05-24 16:28:09,656 - INFO - Reading json file sample_tenant.json from /tmp/tmp5ayd4v81/sample_tenant.zip
+2025-05-24 16:28:09,656 - INFO - Data source: /tmp/tmp5ayd4v81/sample_tenant.zip
+2025-05-24 16:28:09,656 - INFO - JSON data for tenant 'TestTenant' loaded.
+2025-05-24 16:28:09,656 - INFO - Output base directory (general files e.g. CSV/XLSX): /app/integration_test_outputs/test_output_default
+2025-05-24 16:28:09,656 - INFO - Output directory for DB: /app/integration_test_outputs/test_output_default/TestTenant_extracted_db
+2025-05-24 16:28:09,656 - INFO - Output directory for UI map files: /app/integration_test_outputs/test_output_default/TestTenant_UIElements
+2025-05-24 16:28:09,656 - INFO - JSON file read. Main Dest Dir: /app/integration_test_outputs/test_output_default, DB Path (sub-dir): /app/integration_test_outputs/test_output_default/TestTenant_extracted_db, UI Files Dest: /app/integration_test_outputs/test_output_default/TestTenant_UIElements
+2025-05-24 16:28:09,656 - INFO - Attempting to create DB at /app/integration_test_outputs/test_output_default/TestTenant_extracted_db/TestTenant.db
+2025-05-24 16:28:09,657 - INFO - Tenant Database connection established at /app/integration_test_outputs/test_output_default/TestTenant_extracted_db/TestTenant.db
+2025-05-24 16:28:10,067 - INFO - All base tables processed in the database.
+2025-05-24 16:28:10,067 - INFO - Extracting Model data...
+2025-05-24 16:28:10,068 - ERROR - Error during data extraction: 'BgColorFormula'
+Traceback (most recent call last):
+  File "/app/src/streamlit_app.py", line 111, in create_db_and_extract
+    model_extractor.createPlanTablesInDB()
+  File "/app/src/modelextractor.py", line 1249, in createPlanTablesInDB
+    finalCurPlanMeasureFormatting = [
+  File "/app/src/modelextractor.py", line 1249, in <listcomp>
+    finalCurPlanMeasureFormatting = [
+  File "/app/src/modelextractor.py", line 1235, in <lambda>
+    (x["BgColorFormula"] is not None and x["BgColorFormula"] != "")
+KeyError: 'BgColorFormula'
+2025-05-24 16:28:10,070 - INFO - Database connection closed.
+2025-05-24 16:28:10,070 - INFO - Cleaned up temporary directory: /tmp/tmp5ayd4v81
+2025-05-24 16:28:10,070 - INFO - Test Case 1 Result: Success=False, Message='Error during data extraction: 'BgColorFormula'', OutputFiles={'db': '/app/integration_test_outputs/test_output_default/TestTenant_extracted_db/TestTenant.db'}
+2025-05-24 16:28:41,750 - INFO - Starting Test Case 1: Default Options
+2025-05-24 16:28:41,750 - INFO - Test Case 1: Calling run_extraction with destination: /app/integration_test_outputs/test_output_default, options: {'model': True, 'ui': True, 'dep': True, 'measure_usage': True, 'xlsx': False, 'csv': False}
+2025-05-24 16:28:41,750 - INFO - Starting extraction for: sample_tenant.zip to /app/integration_test_outputs/test_output_default
+2025-05-24 16:28:41,752 - INFO - Uploaded ZIP file saved to temporary path: /tmp/tmp7s3ou8u9/sample_tenant.zip
+2025-05-24 16:28:41,753 - INFO - Reading json file sample_tenant.json from /tmp/tmp7s3ou8u9/sample_tenant.zip
+2025-05-24 16:28:41,753 - INFO - Data source: /tmp/tmp7s3ou8u9/sample_tenant.zip
+2025-05-24 16:28:41,753 - INFO - JSON data for tenant 'TestTenant' loaded.
+2025-05-24 16:28:41,753 - INFO - Output base directory (general files e.g. CSV/XLSX): /app/integration_test_outputs/test_output_default
+2025-05-24 16:28:41,753 - INFO - Output directory for DB: /app/integration_test_outputs/test_output_default/TestTenant_extracted_db
+2025-05-24 16:28:41,754 - INFO - Output directory for UI map files: /app/integration_test_outputs/test_output_default/TestTenant_UIElements
+2025-05-24 16:28:41,754 - INFO - JSON file read. Main Dest Dir: /app/integration_test_outputs/test_output_default, DB Path (sub-dir): /app/integration_test_outputs/test_output_default/TestTenant_extracted_db, UI Files Dest: /app/integration_test_outputs/test_output_default/TestTenant_UIElements
+2025-05-24 16:28:41,754 - INFO - Attempting to create DB at /app/integration_test_outputs/test_output_default/TestTenant_extracted_db/TestTenant.db
+2025-05-24 16:28:41,754 - INFO - Tenant Database connection established at /app/integration_test_outputs/test_output_default/TestTenant_extracted_db/TestTenant.db
+2025-05-24 16:28:42,185 - INFO - All base tables processed in the database.
+2025-05-24 16:28:42,185 - INFO - Extracting Model data...
+2025-05-24 16:28:42,187 - ERROR - Error during data extraction: 'PickListId'
+Traceback (most recent call last):
+  File "/app/src/streamlit_app.py", line 111, in create_db_and_extract
+    model_extractor.createPlanTablesInDB()
+  File "/app/src/modelextractor.py", line 1295, in createPlanTablesInDB
+    finalCurPlanMeasurePickLists = [
+  File "/app/src/modelextractor.py", line 1295, in <listcomp>
+    finalCurPlanMeasurePickLists = [
+  File "/app/src/modelextractor.py", line 1292, in <lambda>
+    lambda x: (x["PickListId"] is not None), jMeasures
+KeyError: 'PickListId'
+2025-05-24 16:28:42,188 - INFO - Database connection closed.
+2025-05-24 16:28:42,189 - INFO - Cleaned up temporary directory: /tmp/tmp7s3ou8u9
+2025-05-24 16:28:42,189 - INFO - Test Case 1 Result: Success=False, Message='Error during data extraction: 'PickListId'', OutputFiles={'db': '/app/integration_test_outputs/test_output_default/TestTenant_extracted_db/TestTenant.db'}
+2025-05-24 16:29:15,200 - INFO - Starting Test Case 1: Default Options
+2025-05-24 16:29:15,201 - INFO - Test Case 1: Calling run_extraction with destination: /app/integration_test_outputs/test_output_default, options: {'model': True, 'ui': True, 'dep': True, 'measure_usage': True, 'xlsx': False, 'csv': False}
+2025-05-24 16:29:15,201 - INFO - Starting extraction for: sample_tenant.zip to /app/integration_test_outputs/test_output_default
+2025-05-24 16:29:15,202 - INFO - Uploaded ZIP file saved to temporary path: /tmp/tmp_m1rs031/sample_tenant.zip
+2025-05-24 16:29:15,203 - INFO - Reading json file sample_tenant.json from /tmp/tmp_m1rs031/sample_tenant.zip
+2025-05-24 16:29:15,204 - ERROR - Error reading or parsing JSON data from sample_tenant.json in /tmp/tmp_m1rs031/sample_tenant.zip: Expecting property name enclosed in double quotes: line 42 column 34 (char 1415)
+Traceback (most recent call last):
+  File "/app/src/commondatafuncs.py", line 284, in readJsonFile
+    self.jsonData = json.load(dataFile)
+  File "/usr/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 42 column 34 (char 1415)
+2025-05-24 16:29:15,204 - ERROR - Error in run_extraction: Expecting property name enclosed in double quotes: line 42 column 34 (char 1415)
+Traceback (most recent call last):
+  File "/app/src/streamlit_app.py", line 237, in run_extraction
+    commonObj.readJsonFile(zip_file_path, destination_dir_str, is_streamlit_mode=True)
+  File "/app/src/commondatafuncs.py", line 284, in readJsonFile
+    self.jsonData = json.load(dataFile)
+  File "/usr/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 42 column 34 (char 1415)
+2025-05-24 16:29:15,205 - INFO - Cleaned up temporary directory: /tmp/tmp_m1rs031
+2025-05-24 16:29:15,205 - INFO - Test Case 1 Result: Success=False, Message='Error during extraction setup: Expecting property name enclosed in double quotes: line 42 column 34 (char 1415)', OutputFiles={}
+2025-05-24 16:29:57,291 - INFO - Starting Test Case 1: Default Options
+2025-05-24 16:29:57,291 - INFO - Test Case 1: Calling run_extraction with destination: /app/integration_test_outputs/test_output_default, options: {'model': True, 'ui': True, 'dep': True, 'measure_usage': True, 'xlsx': False, 'csv': False}
+2025-05-24 16:29:57,291 - INFO - Starting extraction for: sample_tenant.zip to /app/integration_test_outputs/test_output_default
+2025-05-24 16:29:57,293 - INFO - Uploaded ZIP file saved to temporary path: /tmp/tmpsnfrgy1r/sample_tenant.zip
+2025-05-24 16:29:57,294 - INFO - Reading json file sample_tenant.json from /tmp/tmpsnfrgy1r/sample_tenant.zip
+2025-05-24 16:29:57,295 - INFO - Created database output directory: /app/integration_test_outputs/test_output_default/TestTenantMinimal_extracted_db
+2025-05-24 16:29:57,295 - INFO - Created UI elements output directory: /app/integration_test_outputs/test_output_default/TestTenantMinimal_UIElements
+2025-05-24 16:29:57,295 - INFO - Data source: /tmp/tmpsnfrgy1r/sample_tenant.zip
+2025-05-24 16:29:57,295 - INFO - JSON data for tenant 'TestTenantMinimal' loaded.
+2025-05-24 16:29:57,295 - INFO - Output base directory (general files e.g. CSV/XLSX): /app/integration_test_outputs/test_output_default
+2025-05-24 16:29:57,295 - INFO - Output directory for DB: /app/integration_test_outputs/test_output_default/TestTenantMinimal_extracted_db
+2025-05-24 16:29:57,295 - INFO - Output directory for UI map files: /app/integration_test_outputs/test_output_default/TestTenantMinimal_UIElements
+2025-05-24 16:29:57,295 - INFO - JSON file read. Main Dest Dir: /app/integration_test_outputs/test_output_default, DB Path (sub-dir): /app/integration_test_outputs/test_output_default/TestTenantMinimal_extracted_db, UI Files Dest: /app/integration_test_outputs/test_output_default/TestTenantMinimal_UIElements
+2025-05-24 16:29:57,295 - INFO - Attempting to create DB at /app/integration_test_outputs/test_output_default/TestTenantMinimal_extracted_db/TestTenantMinimal.db
+2025-05-24 16:29:57,295 - INFO - Tenant Database connection established at /app/integration_test_outputs/test_output_default/TestTenantMinimal_extracted_db/TestTenantMinimal.db
+2025-05-24 16:29:57,586 - INFO - All base tables processed in the database.
+2025-05-24 16:29:57,586 - INFO - Extracting Model data...
+2025-05-24 16:29:57,587 - INFO - Model data extraction complete.
+2025-05-24 16:29:57,587 - INFO - Extracting Rules data...
+2025-05-24 16:29:57,587 - INFO - Rules data extraction complete.
+2025-05-24 16:29:57,587 - INFO - Extracting UI data...
+2025-05-24 16:29:57,587 - INFO - UI data extraction complete.
+2025-05-24 16:29:57,588 - INFO - Extracting Dependencies...
+2025-05-24 16:29:57,589 - INFO - Dependency extraction complete.
+2025-05-24 16:29:57,592 - INFO - Database changes committed.
+2025-05-24 16:29:57,593 - INFO - Database connection closed.
+2025-05-24 16:29:57,593 - INFO - Cleaned up temporary directory: /tmp/tmpsnfrgy1r
+2025-05-24 16:29:57,593 - INFO - Test Case 1 Result: Success=True, Message='Extraction completed successfully.', OutputFiles={'db': '/app/integration_test_outputs/test_output_default/TestTenantMinimal_extracted_db/TestTenantMinimal.db'}
+2025-05-24 16:30:50,686 - INFO - Starting Test Case 2: All Options
+2025-05-24 16:30:50,686 - INFO - Test Case 2: Calling run_extraction with destination: /app/integration_test_outputs/test_output_all_options, options: {'model': True, 'ui': True, 'dep': True, 'measure_usage': True, 'xlsx': True, 'csv': True}
+2025-05-24 16:30:50,686 - INFO - Starting extraction for: sample_tenant.zip to /app/integration_test_outputs/test_output_all_options
+2025-05-24 16:30:50,688 - INFO - Uploaded ZIP file saved to temporary path: /tmp/tmpduju1yzr/sample_tenant.zip
+2025-05-24 16:30:50,689 - INFO - Reading json file sample_tenant.json from /tmp/tmpduju1yzr/sample_tenant.zip
+2025-05-24 16:30:50,690 - INFO - Created database output directory: /app/integration_test_outputs/test_output_all_options/TestTenantMinimal_extracted_db
+2025-05-24 16:30:50,690 - INFO - Created UI elements output directory: /app/integration_test_outputs/test_output_all_options/TestTenantMinimal_UIElements
+2025-05-24 16:30:50,690 - INFO - Data source: /tmp/tmpduju1yzr/sample_tenant.zip
+2025-05-24 16:30:50,690 - INFO - JSON data for tenant 'TestTenantMinimal' loaded.
+2025-05-24 16:30:50,690 - INFO - Output base directory (general files e.g. CSV/XLSX): /app/integration_test_outputs/test_output_all_options
+2025-05-24 16:30:50,690 - INFO - Output directory for DB: /app/integration_test_outputs/test_output_all_options/TestTenantMinimal_extracted_db
+2025-05-24 16:30:50,690 - INFO - Output directory for UI map files: /app/integration_test_outputs/test_output_all_options/TestTenantMinimal_UIElements
+2025-05-24 16:30:50,690 - INFO - JSON file read. Main Dest Dir: /app/integration_test_outputs/test_output_all_options, DB Path (sub-dir): /app/integration_test_outputs/test_output_all_options/TestTenantMinimal_extracted_db, UI Files Dest: /app/integration_test_outputs/test_output_all_options/TestTenantMinimal_UIElements
+2025-05-24 16:30:50,690 - INFO - Attempting to create DB at /app/integration_test_outputs/test_output_all_options/TestTenantMinimal_extracted_db/TestTenantMinimal.db
+2025-05-24 16:30:50,690 - INFO - Tenant Database connection established at /app/integration_test_outputs/test_output_all_options/TestTenantMinimal_extracted_db/TestTenantMinimal.db
+2025-05-24 16:30:50,955 - INFO - All base tables processed in the database.
+2025-05-24 16:30:50,955 - INFO - Extracting Model data...
+2025-05-24 16:30:50,956 - INFO - Model data extraction complete.
+2025-05-24 16:30:50,956 - INFO - Extracting Rules data...
+2025-05-24 16:30:50,956 - INFO - Rules data extraction complete.
+2025-05-24 16:30:50,956 - INFO - Extracting UI data...
+2025-05-24 16:30:50,957 - INFO - UI data extraction complete.
+2025-05-24 16:30:50,957 - INFO - Extracting Dependencies...
+2025-05-24 16:30:50,958 - INFO - Dependency extraction complete.
+2025-05-24 16:30:50,958 - INFO - Creating CSV files...
+2025-05-24 16:30:50,960 - INFO - CSV file creation complete in directory: /app/integration_test_outputs/test_output_all_options/csv_exports
+2025-05-24 16:30:50,960 - INFO - Creating XLSX file...
+2025-05-24 16:30:50,960 - ERROR - Error during data extraction: No module named 'xlsxwriter'
+Traceback (most recent call last):
+  File "/app/src/streamlit_app.py", line 180, in create_db_and_extract
+    xlsx_file_path = db_to_files.createExcelFromDB()
+  File "/app/src/dbtofile.py", line 126, in createExcelFromDB
+    writer = ExcelWriter(xlFileLocation, engine="xlsxwriter")
+  File "/home/swebot/.local/lib/python3.10/site-packages/pandas/io/excel/_xlsxwriter.py", line 197, in __init__
+    from xlsxwriter import Workbook
+ModuleNotFoundError: No module named 'xlsxwriter'
+2025-05-24 16:30:50,962 - INFO - Database connection closed.
+2025-05-24 16:30:50,962 - INFO - Cleaned up temporary directory: /tmp/tmpduju1yzr
+2025-05-24 16:30:50,962 - INFO - Test Case 2 Result: Success=False, Message='Error during data extraction: No module named 'xlsxwriter'', OutputFiles={'db': '/app/integration_test_outputs/test_output_all_options/TestTenantMinimal_extracted_db/TestTenantMinimal.db', 'csv_export_path': '/app/integration_test_outputs/test_output_all_options/csv_exports'}
+2025-05-24 16:31:23,190 - INFO - Starting Test Case 2: All Options
+2025-05-24 16:31:23,191 - INFO - Test Case 2: Calling run_extraction with destination: /app/integration_test_outputs/test_output_all_options, options: {'model': True, 'ui': True, 'dep': True, 'measure_usage': True, 'xlsx': True, 'csv': True}
+2025-05-24 16:31:23,191 - INFO - Starting extraction for: sample_tenant.zip to /app/integration_test_outputs/test_output_all_options
+2025-05-24 16:31:23,193 - INFO - Uploaded ZIP file saved to temporary path: /tmp/tmpsefgx79k/sample_tenant.zip
+2025-05-24 16:31:23,194 - INFO - Reading json file sample_tenant.json from /tmp/tmpsefgx79k/sample_tenant.zip
+2025-05-24 16:31:23,195 - INFO - Data source: /tmp/tmpsefgx79k/sample_tenant.zip
+2025-05-24 16:31:23,195 - INFO - JSON data for tenant 'TestTenantMinimal' loaded.
+2025-05-24 16:31:23,195 - INFO - Output base directory (general files e.g. CSV/XLSX): /app/integration_test_outputs/test_output_all_options
+2025-05-24 16:31:23,195 - INFO - Output directory for DB: /app/integration_test_outputs/test_output_all_options/TestTenantMinimal_extracted_db
+2025-05-24 16:31:23,195 - INFO - Output directory for UI map files: /app/integration_test_outputs/test_output_all_options/TestTenantMinimal_UIElements
+2025-05-24 16:31:23,195 - INFO - JSON file read. Main Dest Dir: /app/integration_test_outputs/test_output_all_options, DB Path (sub-dir): /app/integration_test_outputs/test_output_all_options/TestTenantMinimal_extracted_db, UI Files Dest: /app/integration_test_outputs/test_output_all_options/TestTenantMinimal_UIElements
+2025-05-24 16:31:23,195 - INFO - Attempting to create DB at /app/integration_test_outputs/test_output_all_options/TestTenantMinimal_extracted_db/TestTenantMinimal.db
+2025-05-24 16:31:23,196 - INFO - Tenant Database connection established at /app/integration_test_outputs/test_output_all_options/TestTenantMinimal_extracted_db/TestTenantMinimal.db
+2025-05-24 16:31:23,748 - INFO - All base tables processed in the database.
+2025-05-24 16:31:23,749 - INFO - Extracting Model data...
+2025-05-24 16:31:23,750 - INFO - Model data extraction complete.
+2025-05-24 16:31:23,750 - INFO - Extracting Rules data...
+2025-05-24 16:31:23,750 - INFO - Rules data extraction complete.
+2025-05-24 16:31:23,750 - INFO - Extracting UI data...
+2025-05-24 16:31:23,750 - INFO - UI data extraction complete.
+2025-05-24 16:31:23,750 - INFO - Extracting Dependencies...
+2025-05-24 16:31:23,754 - INFO - Dependency extraction complete.
+2025-05-24 16:31:23,754 - INFO - Creating CSV files...
+2025-05-24 16:31:23,756 - INFO - CSV file creation complete in directory: /app/integration_test_outputs/test_output_all_options/csv_exports
+2025-05-24 16:31:23,756 - INFO - Creating XLSX file...
+2025-05-24 16:31:24,025 - WARNING - XLSX file path not explicitly returned or found at default. Check DBToFiles output logic. Expected in /app/integration_test_outputs/test_output_all_options
+2025-05-24 16:31:24,025 - ERROR - Could not determine XLSX output path. DBToFiles.createExcelFromDB returned: None
+2025-05-24 16:31:24,029 - INFO - Database changes committed.
+2025-05-24 16:31:24,030 - INFO - Database connection closed.
+2025-05-24 16:31:24,031 - INFO - Cleaned up temporary directory: /tmp/tmpsefgx79k
+2025-05-24 16:31:24,031 - INFO - Test Case 2 Result: Success=True, Message='Extraction completed successfully.', OutputFiles={'db': '/app/integration_test_outputs/test_output_all_options/TestTenantMinimal_extracted_db/TestTenantMinimal.db', 'csv_export_path': '/app/integration_test_outputs/test_output_all_options/csv_exports'}

@@ -17,8 +17,10 @@ class DBToFiles:
         """
         self.dbConn = dbConnection
         self.dbConnection = dbConnection.cursor()
-        self.modelFilePath = modelFilePath
+        self.modelFilePath = modelFilePath # This is commonObj.destDir from streamlit_app.py
         self.uiFilePath = uiFilePath
+        # Define a specific base path for all general CSV exports
+        self.csv_export_base_path = os.path.join(self.modelFilePath, "csv_exports")
         try:
             self.logger = logging.getLogger("extractor-logger")
         except:
@@ -3107,12 +3109,16 @@ class DBToFiles:
         :return: null
         """
         if len(data) > 0:
-            if ui is True:
+            if ui is True: # UI related files go to uiFilePath
                 dirName = os.path.join(self.uiFilePath, fileName)
-            else:
-                dirName = os.path.join(self.modelFilePath, fileName)
-            if not os.path.exists(os.path.dirname(dirName)):
+            else: # Non-UI files (general CSVs, entity files) go to the csv_export_base_path
+                dirName = os.path.join(self.csv_export_base_path, fileName)
+            
+            # Ensure the full path to the file exists
+            target_dir = os.path.dirname(dirName)
+            if not os.path.exists(target_dir):
                 try:
+                    os.makedirs(target_dir)
                     os.makedirs(os.path.dirname(dirName))
                 except OSError as exc:  # Guard against race condition
                     if exc.errno != errno.EEXIST:
@@ -3137,12 +3143,16 @@ class DBToFiles:
         :param ui: if to be added to ui or model folder
         :return: null
         """
-        if ui:
+        if ui: # UI related files go to uiFilePath
             dirName = os.path.join(self.uiFilePath, fileName)
-        else:
-            dirName = os.path.join(self.modelFilePath, fileName)
-        if not os.path.exists(os.path.dirname(dirName)):
+        else: # Non-UI files (general CSVs, entity files) go to the csv_export_base_path
+            dirName = os.path.join(self.csv_export_base_path, fileName)
+
+        # Ensure the full path to the file exists
+        target_dir = os.path.dirname(dirName)
+        if not os.path.exists(target_dir):
             try:
+                os.makedirs(target_dir)
                 os.makedirs(os.path.dirname(dirName))
             except OSError as exc:  # Guard against race condition
                 if exc.errno != errno.EEXIST:
