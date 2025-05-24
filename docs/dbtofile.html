@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module dbtofile</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>dbtofile</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:d%3A%5Cwork%5Ctfs_reftenant%5Co9.referencemodel%5Cutilities%5Cpython%5Ctenant-extractor%5Csrc%5Cdbtofile.py">d:\work\tfs_reftenant\o9.referencemodel\utilities\python\tenant-extractor\src\dbtofile.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="csv.html">csv</a><br>
+<a href="errno.html">errno</a><br>
+</td><td width="25%" valign=top><a href="logging.html">logging</a><br>
+<a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="re.html">re</a><br>
+<a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="dbtofile.html#DBToFiles">DBToFiles</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="DBToFiles">class <strong>DBToFiles</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#DBToFiles">DBToFiles</a>(dbConnection,&nbsp;modelFilePath,&nbsp;uiFilePath)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="DBToFiles-__init__"><strong>__init__</strong></a>(self, dbConnection, modelFilePath, uiFilePath)</dt><dd><tt><a href="#DBToFiles">DBToFiles</a>&nbsp;Constructor.<br>
+:param&nbsp;dbConnection:&nbsp;Database&nbsp;connection<br>
+:param&nbsp;modelFilePath:&nbsp;Model&nbsp;files&nbsp;path<br>
+:param&nbsp;uiFilePath:&nbsp;UI&nbsp;files&nbsp;path</tt></dd></dl>
+
+<dl><dt><a name="DBToFiles-createActionButtonCSVArrays"><strong>createActionButtonCSVArrays</strong></a>(self)</dt><dd><tt>Create&nbsp;action&nbsp;button&nbsp;related&nbsp;data&nbsp;to&nbsp;csv&nbsp;files.<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<dl><dt><a name="DBToFiles-createCSV"><strong>createCSV</strong></a>(self, fileName, data, ui=False)</dt><dd><tt>Create&nbsp;CSV&nbsp;files.<br>
+:param&nbsp;fileName:&nbsp;filename<br>
+:param&nbsp;data:&nbsp;data&nbsp;to&nbsp;be&nbsp;added&nbsp;to&nbsp;the&nbsp;csv&nbsp;file<br>
+:param&nbsp;ui:&nbsp;boolean&nbsp;value&nbsp;to&nbsp;represent&nbsp;if&nbsp;the&nbsp;file&nbsp;is&nbsp;model&nbsp;or&nbsp;ui&nbsp;related<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<dl><dt><a name="DBToFiles-createDSRulesFile"><strong>createDSRulesFile</strong></a>(self)</dt><dd><tt>Create&nbsp;data&nbsp;security&nbsp;rule&nbsp;files.<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<dl><dt><a name="DBToFiles-createDependenciesCSVArray"><strong>createDependenciesCSVArray</strong></a>(self)</dt><dd><tt>Create&nbsp;dependencies&nbsp;data&nbsp;related&nbsp;csv&nbsp;files&nbsp;from&nbsp;the&nbsp;database.<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<dl><dt><a name="DBToFiles-createDimCSVArrays"><strong>createDimCSVArrays</strong></a>(self)</dt><dd><tt>Create&nbsp;dimension&nbsp;data&nbsp;related&nbsp;csv&nbsp;files.<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<dl><dt><a name="DBToFiles-createEntityFile"><strong>createEntityFile</strong></a>(self, dataBody, fileName, ui=False)</dt><dd><tt>Create&nbsp;entity&nbsp;based&nbsp;files.<br>
+:param&nbsp;dataBody:&nbsp;file&nbsp;data&nbsp;body<br>
+:param&nbsp;fileName:&nbsp;filename<br>
+:param&nbsp;ui:&nbsp;if&nbsp;to&nbsp;be&nbsp;added&nbsp;to&nbsp;ui&nbsp;or&nbsp;model&nbsp;folder<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<dl><dt><a name="DBToFiles-createExcelFilesArray"><strong>createExcelFilesArray</strong></a>(self)</dt><dd><tt>Create&nbsp;excel&nbsp;data&nbsp;related&nbsp;csv&nbsp;files.<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<dl><dt><a name="DBToFiles-createExcelFromDB"><strong>createExcelFromDB</strong></a>(self)</dt><dd><tt>Create&nbsp;xlsx&nbsp;files&nbsp;from&nbsp;all&nbsp;the&nbsp;tables&nbsp;in&nbsp;the&nbsp;database.<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<dl><dt><a name="DBToFiles-createGraphCSVArrays"><strong>createGraphCSVArrays</strong></a>(self)</dt><dd><tt>Create&nbsp;Graph&nbsp;data&nbsp;related&nbsp;csv&nbsp;files.<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<dl><dt><a name="DBToFiles-createPlanCSVArrays"><strong>createPlanCSVArrays</strong></a>(self)</dt><dd><tt>Create&nbsp;Plan&nbsp;related&nbsp;csv&nbsp;files.<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<dl><dt><a name="DBToFiles-createPluginsCSVArrays"><strong>createPluginsCSVArrays</strong></a>(self)</dt><dd><tt>Create&nbsp;plugin&nbsp;related&nbsp;csv&nbsp;files.<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<dl><dt><a name="DBToFiles-createProceduresFilesArray"><strong>createProceduresFilesArray</strong></a>(self)</dt><dd><tt>Create&nbsp;procedure&nbsp;related&nbsp;files&nbsp;from&nbsp;the&nbsp;database.<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<dl><dt><a name="DBToFiles-createRuleFilesArray"><strong>createRuleFilesArray</strong></a>(self)</dt><dd><tt>Create&nbsp;rule&nbsp;files&nbsp;from&nbsp;the&nbsp;rules&nbsp;tables&nbsp;in&nbsp;the&nbsp;database.<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<dl><dt><a name="DBToFiles-createTranslationFileArray"><strong>createTranslationFileArray</strong></a>(self)</dt><dd><tt>Create&nbsp;translation&nbsp;data&nbsp;related&nbsp;csv&nbsp;files.<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<dl><dt><a name="DBToFiles-createUIFilesArray"><strong>createUIFilesArray</strong></a>(self)</dt><dd><tt>Create&nbsp;UI&nbsp;data&nbsp;related&nbsp;csv&nbsp;files.<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="DBToFiles-replaceNewLine"><strong>replaceNewLine</strong></a>(inputString)</dt><dd><tt>Replace&nbsp;all&nbsp;line&nbsp;feed&nbsp;with&nbsp;carriage&nbsp;return&nbsp;and&nbsp;line&nbsp;feed&nbsp;for&nbsp;windows&nbsp;compatibility.<br>
+:param&nbsp;inputString:&nbsp;input&nbsp;line<br>
+:return:&nbsp;new&nbsp;line&nbsp;with&nbsp;CRLF</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

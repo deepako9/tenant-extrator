@@ -1,0 +1,142 @@
+2025-05-20 12:21:20,233 - extractor-logger - INFO - Logger Initialized
+2025-05-20 12:21:20,233 - extractor-logger - INFO - Model Extractor v25.1
+2025-05-20 12:21:44,236 - extractor-logger - INFO - Getting tenant details. Start Extraction
+2025-05-20 12:21:44,294 - extractor-logger - INFO - Tenant Database created successfully at D:/work/workitems/466756/25.1\VoiceOfCustomerProduction.db
+2025-05-20 12:21:45,173 - extractor-logger - INFO - All Tables added in the database.
+2025-05-20 12:21:45,205 - extractor-logger - INFO - Extracting Dimensions Data
+2025-05-20 12:21:45,210 - extractor-logger - INFO - Extracting Graph Data
+2025-05-20 12:21:45,210 - extractor-logger - INFO - Extracting Plans Data
+2025-05-20 12:21:45,214 - extractor-logger - INFO - Extracting Rules Data
+2025-05-20 12:21:45,216 - extractor-logger - INFO - Extracting Data Security Rules.
+2025-05-20 12:21:45,216 - extractor-logger - INFO - Extracting Widgets Data
+2025-05-20 12:21:45,226 - extractor-logger - INFO - Extracting Web Widgets Data
+2025-05-20 12:21:45,227 - extractor-logger - INFO - Extracting Excel Widgets Data
+2025-05-20 12:21:45,227 - extractor-logger - INFO - Extracting Translation Data
+2025-05-20 12:21:45,227 - extractor-logger - INFO - 
+entity types for which translations are given in the tenant are:
+2025-05-20 12:21:45,227 - extractor-logger - INFO - []
+2025-05-20 12:21:45,227 - extractor-logger - INFO - Extracting Action button Data
+2025-05-20 12:21:45,228 - extractor-logger - INFO - Extracting Dependencies table
+2025-05-20 12:21:45,229 - extractor-logger - INFO - Process Measure Conditional Formats Dependencies.
+2025-05-20 12:21:45,229 - extractor-logger - INFO - Extracting Active Rule measures dependencies.
+2025-05-20 12:21:45,229 - extractor-logger - INFO - Extracting Procedures measures dependencies.
+2025-05-20 12:21:45,230 - extractor-logger - INFO - Extracting Action Button measures dependencies.
+2025-05-20 12:21:45,232 - extractor-logger - INFO - Process Measure Twins Dependencies.
+2025-05-20 12:21:45,232 - extractor-logger - INFO - Process MeasureFormulae Dependencies.
+2025-05-20 12:21:45,232 - extractor-logger - INFO - Process MeasureSpreads Dependencies.
+2025-05-20 12:21:45,232 - extractor-logger - INFO - Process RGenPluginInputQueries Dependencies.
+2025-05-20 12:21:45,232 - extractor-logger - INFO - Process RGenPluginInputTables Dependencies.
+2025-05-20 12:21:45,232 - extractor-logger - INFO - Process RGenPluginOutputTables Dependencies.
+2025-05-20 12:21:45,232 - extractor-logger - INFO - Process PythonPluginInputTables Dependencies.
+2025-05-20 12:21:45,232 - extractor-logger - INFO - Process TenantPluginDetails Dependencies.
+2025-05-20 12:21:45,232 - extractor-logger - INFO - Process NonRPluginParams Dependencies.
+2025-05-20 12:21:45,232 - extractor-logger - INFO - Process Widget Measure List.
+2025-05-20 12:21:45,234 - extractor-logger - INFO - Clean up Model Dependency table.
+2025-05-20 12:21:45,235 - extractor-logger - INFO - Clean up UI Dependency table.
+2025-05-20 12:21:45,235 - extractor-logger - INFO - Done with Dependencies table
+2025-05-20 12:21:45,236 - extractor-logger - INFO - Creating CSV Files.
+2025-05-20 12:21:45,236 - extractor-logger - INFO - Creating dimensions CSV array.
+2025-05-20 12:21:45,245 - extractor-logger - INFO - Data Written in file: Dimensions.csv
+2025-05-20 12:21:45,251 - extractor-logger - INFO - Data Written in file: DimAttributes.csv
+2025-05-20 12:21:45,256 - extractor-logger - INFO - Data Written in file: DimAttrProperties.csv
+2025-05-20 12:21:45,260 - extractor-logger - INFO - Data Written in file: DimAttrTranslations.csv
+2025-05-20 12:21:45,264 - extractor-logger - INFO - Data Written in file: DimAttrAliases.csv
+2025-05-20 12:21:45,267 - extractor-logger - INFO - Data Written in file: DimHierarchies.csv
+2025-05-20 12:21:45,271 - extractor-logger - INFO - Data Written in file: DimHierLevels.csv
+2025-05-20 12:21:45,275 - extractor-logger - INFO - Data Written in file: Picklists.csv
+2025-05-20 12:21:45,282 - extractor-logger - INFO - Data Written in file: PickListValues.csv
+2025-05-20 12:21:45,282 - extractor-logger - INFO - Creating Graphs CSV array.
+2025-05-20 12:21:45,283 - extractor-logger - INFO - Creating plans CSV array.
+2025-05-20 12:21:45,287 - extractor-logger - INFO - Data Written in file: Plans.csv
+2025-05-20 12:21:45,294 - extractor-logger - INFO - Data Written in file: Plans/TicketCount/MeasureGroups.TicketCount.csv
+2025-05-20 12:21:45,300 - extractor-logger - INFO - Data Written in file: Plans/TicketCount/MeasureGrpGranularity.TicketCount.csv
+2025-05-20 12:21:45,305 - extractor-logger - INFO - Data Written in file: Plans/TicketCount/Measures.TicketCount.csv
+2025-05-20 12:21:45,312 - extractor-logger - INFO - Data Written in file: Plans/TotalTicket/MeasureGroups.TotalTicket.csv
+2025-05-20 12:21:45,317 - extractor-logger - INFO - Data Written in file: Plans/TotalTicket/MeasureGrpGranularity.TotalTicket.csv
+2025-05-20 12:21:45,321 - extractor-logger - INFO - Data Written in file: Plans/TotalTicket/Measures.TotalTicket.csv
+2025-05-20 12:21:45,328 - extractor-logger - INFO - Data Written in file: Plans/VOCCyclePlan/MeasureGroups.VOCCyclePlan.csv
+2025-05-20 12:21:45,334 - extractor-logger - INFO - Data Written in file: Plans/VOCCyclePlan/MeasureGrpGranularity.VOCCyclePlan.csv
+2025-05-20 12:21:45,341 - extractor-logger - INFO - Data Written in file: Plans/VOCCyclePlan/Measures.VOCCyclePlan.csv
+2025-05-20 12:21:45,346 - extractor-logger - INFO - Data Written in file: Plans/VOCCyclePlan/MeasurePickLists.VOCCyclePlan.csv
+2025-05-20 12:21:45,350 - extractor-logger - INFO - Data Written in file: Plans/VOCCyclePlan/MeasureFormulae.VOCCyclePlan.csv
+2025-05-20 12:21:45,354 - extractor-logger - INFO - Data Written in file: Plans/VOCCyclePlan/MeasureSpreads.VOCCyclePlan.csv
+2025-05-20 12:21:45,360 - extractor-logger - INFO - Data Written in file: Plans/VOCCyclePlan/MeasureAggregates.VOCCyclePlan.csv
+2025-05-20 12:21:45,365 - extractor-logger - INFO - Data Written in file: Plans/VOCCyclePlan/MeasureTranslations.VOCCyclePlan.csv
+2025-05-20 12:21:45,372 - extractor-logger - INFO - Data Written in file: ActionButtons/ActionButtonDetails.csv
+2025-05-20 12:21:45,378 - extractor-logger - INFO - Data Written in file: ActionButtons/ActionButtonRules.csv
+2025-05-20 12:21:45,383 - extractor-logger - INFO - Data Written in file: ActionButtons/ActionButtonFieldBindings.csv
+2025-05-20 12:21:45,386 - extractor-logger - INFO - Data Written in file: ActionButtons/ActionButtonDataSource.csv
+2025-05-20 12:21:45,390 - extractor-logger - INFO - Data Written in file: ActionButtons/ActionButtonBindingsForWeb.csv
+2025-05-20 12:21:45,391 - extractor-logger - INFO - Creating rules files.
+2025-05-20 12:21:45,394 - extractor-logger - INFO - Data Written in file: NamedSets.csv
+2025-05-20 12:21:45,399 - extractor-logger - INFO - Data Written in file: ActiveRules/ActiveRuleFiles.csv
+2025-05-20 12:21:45,402 - extractor-logger - INFO - Data Written in file: ActiveRules/VOCRules.ibpl
+2025-05-20 12:21:45,408 - extractor-logger - INFO - Data Written in file: Plugins/PythonPlugins/ADO_comments/ADO_comments_Script.txt
+2025-05-20 12:21:45,410 - extractor-logger - INFO - Data Written in file: Plugins/PythonPlugins/ADO_comments/ADO_comments_params.csv
+2025-05-20 12:21:45,414 - extractor-logger - INFO - Data Written in file: Plugins/PythonPlugins/ADO_comments/ADO_comments_inputTables.csv
+2025-05-20 12:21:45,417 - extractor-logger - INFO - Data Written in file: Plugins/PythonPlugins/ADO_comments/ADO_comments_outputTables.csv
+2025-05-20 12:21:45,421 - extractor-logger - INFO - Data Written in file: Plugins/PythonPlugins/ADO_Count_Rep/ADO_Count_Rep_Script.txt
+2025-05-20 12:21:45,424 - extractor-logger - INFO - Data Written in file: Plugins/PythonPlugins/ADO_Count_Rep/ADO_Count_Rep_params.csv
+2025-05-20 12:21:45,426 - extractor-logger - INFO - Data Written in file: Plugins/PythonPlugins/ADO_Count_Rep/ADO_Count_Rep_inputTables.csv
+2025-05-20 12:21:45,430 - extractor-logger - INFO - Data Written in file: Plugins/PythonPlugins/ADO_Count_Rep/ADO_Count_Rep_outputTables.csv
+2025-05-20 12:21:45,433 - extractor-logger - INFO - Data Written in file: Plugins/PythonPlugins/ADO_merge_script/ADO_merge_script_Script.txt
+2025-05-20 12:21:45,436 - extractor-logger - INFO - Data Written in file: Plugins/PythonPlugins/ADO_merge_script/ADO_merge_script_params.csv
+2025-05-20 12:21:45,439 - extractor-logger - INFO - Data Written in file: Plugins/PythonPlugins/ADO_merge_script/ADO_merge_script_inputTables.csv
+2025-05-20 12:21:45,441 - extractor-logger - INFO - Data Written in file: Plugins/PythonPlugins/ADO_merge_script/ADO_merge_script_outputTables.csv
+2025-05-20 12:21:45,445 - extractor-logger - INFO - Data Written in file: Plugins/PythonPlugins/ADO_update_plugin/ADO_update_plugin_Script.txt
+2025-05-20 12:21:45,448 - extractor-logger - INFO - Data Written in file: Plugins/PythonPlugins/ADO_update_plugin/ADO_update_plugin_params.csv
+2025-05-20 12:21:45,451 - extractor-logger - INFO - Data Written in file: Plugins/PythonPlugins/ADO_update_plugin/ADO_update_plugin_inputTables.csv
+2025-05-20 12:21:45,453 - extractor-logger - INFO - Data Written in file: Plugins/PythonPlugins/ADO_update_plugin/ADO_update_plugin_outputTables.csv
+2025-05-20 12:21:45,458 - extractor-logger - INFO - Data Written in file: Procedures/ProcedureGroup_LeadTime/UpdateLeadTimeDates/InputParameters.csv
+2025-05-20 12:21:45,460 - extractor-logger - INFO - Data Written in file: Procedures/ProcedureGroup_LeadTime/UpdateLeadTimeDates/ProcComment.ibpl
+2025-05-20 12:21:45,462 - extractor-logger - INFO - Data Written in file: Procedures/ProcedureGroup_LeadTime/UpdateLeadTimeDates/ProcedureText.ibpl
+2025-05-20 12:21:45,465 - extractor-logger - INFO - Data Written in file: Procedures/ProcedureGroup_VOC/PurgeFactData/ProcComment.ibpl
+2025-05-20 12:21:45,468 - extractor-logger - INFO - Data Written in file: Procedures/ProcedureGroup_VOC/PurgeFactData/ProcedureText.ibpl
+2025-05-20 12:21:45,472 - extractor-logger - INFO - Data Written in file: Procedures/Procedures.csv
+2025-05-20 12:21:45,485 - extractor-logger - INFO - Data Written in file: WidgetDefinitionProperties.csv
+2025-05-20 12:21:45,490 - extractor-logger - INFO - Data Written in file: Workspaces.csv
+2025-05-20 12:21:45,492 - extractor-logger - INFO - Data Written in file: Pages.csv
+2025-05-20 12:21:45,495 - extractor-logger - INFO - Data Written in file: Views.csv
+2025-05-20 12:21:45,498 - extractor-logger - INFO - Data Written in file: Widgets.csv
+2025-05-20 12:21:45,502 - extractor-logger - INFO - Data Written in file: WidgetsNotUsedInWebOrExcel.csv
+2025-05-20 12:21:45,504 - extractor-logger - INFO - Data Written in file: WidgetLevelAttributes.csv
+2025-05-20 12:21:45,508 - extractor-logger - INFO - Data Written in file: WidgetLevelAttrFilters.csv
+2025-05-20 12:21:45,510 - extractor-logger - INFO - Data Written in file: WidgetMeasureFilters.csv
+2025-05-20 12:21:45,513 - extractor-logger - INFO - Data Written in file: WidgetInterDependentMeasures.csv
+2025-05-20 12:21:45,515 - extractor-logger - INFO - Data Written in file: WidgetAssociationMeasures.csv
+2025-05-20 12:21:45,520 - extractor-logger - INFO - Data Written in file: WorkspaceWebWidgets/Release.WebWidgets.csv
+2025-05-20 12:21:45,522 - extractor-logger - INFO - Data Written in file: WorkspaceWidgetMeasuresList/Release.WidgetMeasuresList.csv
+2025-05-20 12:21:45,525 - extractor-logger - INFO - Data Written in file: WorkspaceWidgetInfoContext/Release.WidgetInfoContext.csv
+2025-05-20 12:21:45,528 - extractor-logger - INFO - Data Written in file: WorkspaceWebWidgets/Dashboard.WebWidgets.csv
+2025-05-20 12:21:45,531 - extractor-logger - INFO - Data Written in file: WorkspaceWidgetMeasuresList/Dashboard.WidgetMeasuresList.csv
+2025-05-20 12:21:45,534 - extractor-logger - INFO - Data Written in file: WorkspaceWidgetFilterLinkings/Dashboard.WidgetFilterLinkings.csv
+2025-05-20 12:21:45,538 - extractor-logger - INFO - Data Written in file: WorkspaceWidgetInfoContext/Dashboard.WidgetInfoContext.csv
+2025-05-20 12:21:45,540 - extractor-logger - INFO - Data Written in file: WorkspaceWebWidgets/o9 Customer.WebWidgets.csv
+2025-05-20 12:21:45,543 - extractor-logger - INFO - Data Written in file: WorkspaceWidgetMeasuresList/o9 Customer.WidgetMeasuresList.csv
+2025-05-20 12:21:45,546 - extractor-logger - INFO - Data Written in file: WorkspaceWidgetFilterLinkings/o9 Customer.WidgetFilterLinkings.csv
+2025-05-20 12:21:45,548 - extractor-logger - INFO - Data Written in file: WorkspaceWidgetInfoContext/o9 Customer.WidgetInfoContext.csv
+2025-05-20 12:21:45,551 - extractor-logger - INFO - Data Written in file: WorkspaceWebWidgets/Test WS.WebWidgets.csv
+2025-05-20 12:21:45,554 - extractor-logger - INFO - Data Written in file: WorkspaceWidgetMeasuresList/Test WS.WidgetMeasuresList.csv
+2025-05-20 12:21:45,558 - extractor-logger - INFO - Data Written in file: WorkspaceWidgetFilterSharings/Test WS.WidgetFilterSharings.csv
+2025-05-20 12:21:45,560 - extractor-logger - INFO - Data Written in file: WorkspaceWidgetInfoContext/Test WS.WidgetInfoContext.csv
+2025-05-20 12:21:45,562 - extractor-logger - INFO - Data Written in file: WorkspaceWebWidgets/VOC.WebWidgets.csv
+2025-05-20 12:21:45,566 - extractor-logger - INFO - Data Written in file: WorkspaceWidgetMeasuresList/VOC.WidgetMeasuresList.csv
+2025-05-20 12:21:45,568 - extractor-logger - INFO - Data Written in file: WorkspaceWidgetFilterLinkings/VOC.WidgetFilterLinkings.csv
+2025-05-20 12:21:45,571 - extractor-logger - INFO - Data Written in file: WorkspaceWidgetInfoContext/VOC.WidgetInfoContext.csv
+2025-05-20 12:21:45,574 - extractor-logger - INFO - Data Written in file: WorkspaceWebWidgets/o9 Internal.WebWidgets.csv
+2025-05-20 12:21:45,578 - extractor-logger - INFO - Data Written in file: WorkspaceWidgetMeasuresList/o9 Internal.WidgetMeasuresList.csv
+2025-05-20 12:21:45,579 - extractor-logger - INFO - Data Written in file: WorkspaceWidgetFilterLinkings/o9 Internal.WidgetFilterLinkings.csv
+2025-05-20 12:21:45,582 - extractor-logger - INFO - Data Written in file: WorkspaceWidgetInfoContext/o9 Internal.WidgetInfoContext.csv
+2025-05-20 12:21:45,585 - extractor-logger - INFO - Data Written in file: ExcelFolders.csv
+2025-05-20 12:21:45,585 - extractor-logger - INFO - Creating dependency CSV array.
+2025-05-20 12:21:45,589 - extractor-logger - INFO - Data Written in file: ModelDependencies/PluginInvocation.csv
+2025-05-20 12:21:45,593 - extractor-logger - INFO - Data Written in file: ModelDependencies/ModelDependenciesDetails.csv
+2025-05-20 12:21:45,597 - extractor-logger - INFO - Data Written in file: UIDependencies/UIDependenciesDetails.csv
+2025-05-20 12:21:45,600 - extractor-logger - INFO - Data Written in file: ModelDependencies/Formulae.csv
+2025-05-20 12:21:45,609 - extractor-logger - INFO - Data Written in file: DataSecurityRules/DataSecurityIBPLRulesDetail.csv
+2025-05-20 12:21:45,612 - extractor-logger - INFO - Data Written in file: DataSecurityRules/Customer Data Security Rules.ibpl
+2025-05-20 12:21:45,615 - extractor-logger - INFO - Data Written in file: DataSecurityRules/VOC Data Security Rule.ibpl
+2025-05-20 12:21:45,615 - extractor-logger - INFO - Generating Excel File.
+2025-05-20 12:21:46,918 - extractor-logger - INFO - File saved: D:/work/workitems/466756/25.1\VoiceOfCustomerProduction.xlsx
+2025-05-20 12:21:46,919 - extractor-logger - INFO - Completed Extraction
+2025-05-20 12:21:46,970 - extractor-logger - INFO - Successfully fetched data from ZIP

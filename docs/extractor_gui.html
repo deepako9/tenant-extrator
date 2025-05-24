@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module extractor_gui</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>extractor_gui</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:d%3A%5Cwork%5Ctfs_reftenant%5Co9.referencemodel%5Cutilities%5Cpython%5Ctenant-extractor%5Csrc%5Cextractor_gui.py">d:\work\tfs_reftenant\o9.referencemodel\utilities\python\tenant-extractor\src\extractor_gui.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="errno.html">errno</a><br>
+<a href="tkinter.filedialog.html">tkinter.filedialog</a><br>
+</td><td width="25%" valign=top><a href="logging.html">logging</a><br>
+<a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="sqlite3.html">sqlite3</a><br>
+<a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top><a href="threading.html">threading</a><br>
+<a href="tkinter.ttk.html">tkinter.ttk</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="extractor_gui.html#ExtractorGUI">ExtractorGUI</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ExtractorGUI">class <strong>ExtractorGUI</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#ExtractorGUI">ExtractorGUI</a>(master,&nbsp;version,&nbsp;logFileName,&nbsp;guiOption)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="ExtractorGUI-__init__"><strong>__init__</strong></a>(self, master, version, logFileName, guiOption)</dt><dd><tt><a href="#ExtractorGUI">ExtractorGUI</a>&nbsp;Constructor.&nbsp;Declaration&nbsp;of&nbsp;all&nbsp;UI&nbsp;related&nbsp;elements.<br>
+:param&nbsp;master:&nbsp;master&nbsp;root&nbsp;TK&nbsp;instance<br>
+:param&nbsp;version:&nbsp;current&nbsp;app&nbsp;version<br>
+:param&nbsp;logFileName:&nbsp;log&nbsp;file&nbsp;location<br>
+:param&nbsp;guiOption:&nbsp;additional&nbsp;gui&nbsp;options</tt></dd></dl>
+
+<dl><dt><a name="ExtractorGUI-chooseDirClicked"><strong>chooseDirClicked</strong></a>(self)</dt><dd><tt>On&nbsp;click&nbsp;of&nbsp;Choose&nbsp;Destination&nbsp;Directory&nbsp;button,&nbsp;to&nbsp;choose&nbsp;a&nbsp;destination&nbsp;directory.<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<dl><dt><a name="ExtractorGUI-chooseJSONClicked"><strong>chooseJSONClicked</strong></a>(self)</dt><dd><tt>On&nbsp;click&nbsp;of&nbsp;Choose&nbsp;Tenant&nbsp;ZIP&nbsp;File&nbsp;button,&nbsp;To&nbsp;select&nbsp;the&nbsp;zip&nbsp;json&nbsp;file.<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<dl><dt><a name="ExtractorGUI-createDB"><strong>createDB</strong></a>(self, location, data)</dt><dd><tt>Create&nbsp;the&nbsp;database,&nbsp;all&nbsp;the&nbsp;tables&nbsp;in&nbsp;the&nbsp;database&nbsp;and&nbsp;Extract&nbsp;the&nbsp;model,&nbsp;ui&nbsp;and&nbsp;dependencies&nbsp;data.<br>
+:param&nbsp;location:&nbsp;destination&nbsp;location&nbsp;for&nbsp;the&nbsp;database<br>
+:param&nbsp;data:&nbsp;json&nbsp;data&nbsp;as&nbsp;dict<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<dl><dt><a name="ExtractorGUI-createFileUploadFrame"><strong>createFileUploadFrame</strong></a>(self)</dt><dd><tt>Create&nbsp;all&nbsp;the&nbsp;elements&nbsp;of&nbsp;the&nbsp;file&nbsp;upload&nbsp;frame.<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<dl><dt><a name="ExtractorGUI-createUIVariables"><strong>createUIVariables</strong></a>(self)</dt><dd><tt>Declaration&nbsp;of&nbsp;all&nbsp;UI&nbsp;variables.<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<dl><dt><a name="ExtractorGUI-createWidgets"><strong>createWidgets</strong></a>(self)</dt><dd><tt>Create&nbsp;Widgets.<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<dl><dt><a name="ExtractorGUI-extractData"><strong>extractData</strong></a>(self)</dt><dd><tt>Read&nbsp;the&nbsp;json&nbsp;file&nbsp;from&nbsp;the&nbsp;zip&nbsp;file&nbsp;and&nbsp;extract&nbsp;data&nbsp;from&nbsp;the&nbsp;json&nbsp;file.<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<dl><dt><a name="ExtractorGUI-finalizeUI"><strong>finalizeUI</strong></a>(self)</dt><dd><tt>Finalize&nbsp;the&nbsp;UI&nbsp;to&nbsp;be&nbsp;able&nbsp;to&nbsp;render&nbsp;on&nbsp;the&nbsp;root&nbsp;window.<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<dl><dt><a name="ExtractorGUI-setLogger"><strong>setLogger</strong></a>(self)</dt><dd><tt>Get&nbsp;logger&nbsp;for&nbsp;the&nbsp;app.<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<dl><dt><a name="ExtractorGUI-startExtractionClicked"><strong>startExtractionClicked</strong></a>(self)</dt><dd><tt>On&nbsp;click&nbsp;of&nbsp;Start&nbsp;Extraction&nbsp;button,&nbsp;to&nbsp;start&nbsp;the&nbsp;extraction&nbsp;thread.<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<dl><dt><a name="ExtractorGUI-startExtractionCompletionCheck"><strong>startExtractionCompletionCheck</strong></a>(self)</dt><dd><tt>Check&nbsp;if&nbsp;the&nbsp;getExtractionDataThread&nbsp;is&nbsp;active&nbsp;i.e&nbsp;if&nbsp;the&nbsp;extraction&nbsp;is&nbsp;completed.<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<dl><dt><a name="ExtractorGUI-startProgressBars"><strong>startProgressBars</strong></a>(self)</dt><dd><tt>Starts&nbsp;all&nbsp;progress&nbsp;bars.</tt></dd></dl>
+
+<dl><dt><a name="ExtractorGUI-stopProgressBars"><strong>stopProgressBars</strong></a>(self)</dt><dd><tt>Stop&nbsp;all&nbsp;progress&nbsp;bars.</tt></dd></dl>
+
+<dl><dt><a name="ExtractorGUI-updateStatus"><strong>updateStatus</strong></a>(self, updateText, color='sky blue')</dt><dd><tt>Update&nbsp;the&nbsp;UI&nbsp;status.<br>
+:param&nbsp;updateText:&nbsp;Text&nbsp;to&nbsp;be&nbsp;displayed<br>
+:param&nbsp;color:&nbsp;color&nbsp;of&nbsp;the&nbsp;text&nbsp;to&nbsp;indicate&nbsp;the&nbsp;state<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="ExtractorGUI-padFrameWidgets"><strong>padFrameWidgets</strong></a>(inputFrame)</dt><dd><tt>Add&nbsp;padding&nbsp;to&nbsp;the&nbsp;widgets.<br>
+:param&nbsp;inputFrame:&nbsp;input&nbsp;frame<br>
+:return:&nbsp;null</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>DISABLED</strong> = 'disabled'<br>
+<strong>E</strong> = 'e'<br>
+<strong>FALSE</strong> = 0<br>
+<strong>N</strong> = 'n'<br>
+<strong>NORMAL</strong> = 'normal'<br>
+<strong>S</strong> = 's'<br>
+<strong>W</strong> = 'w'<br>
+<strong>tablesData</strong> = '<font color="#c040c0">\n</font>    DROP TABLE IF EXISTS Dimensions;<font color="#c040c0">\n</font>    CREATE...me TEXT, AliasName TEXT, AliasDescription TEXT);<font color="#c040c0">\n</font>'</td></tr></table>
+</body></html>
